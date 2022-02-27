@@ -4,16 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-fetch('https://julianyasin.herokuapp.com/data')
-  .then(response => response.json())
-  .then(json => {
-      var header = document.getElementById('header')
-      for (let i = 0; i < json.length; i++) {
-          var btn = document.createElement('btn')
-          btn.innerHTML = json [i],<a href="https://www.aap.org/" target="_blank">AAP.org</a>;
-          btn.className="btn btn-warning"
-          header.appendChild(btn)
-      }})
+
+      
 
 !(function($) {
   "use strict";
