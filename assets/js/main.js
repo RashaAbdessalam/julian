@@ -5,7 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-fetch('https://julianyasin.herokuapp.com/jj')
+fetch('https://julianyasin.herokuapp.com/')
   .then(response => response.json())
   .then(json => {
       var mainul = document.getElementById('mainul')
