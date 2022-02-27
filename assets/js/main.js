@@ -4,16 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-fetch('https://julianyasin.herokuapp.com/data')
-  .then(response => response.json())
-  .then(json => {
-      var mainul = document.getElementById('mainul')
-      for (let i = 0; i < json.length; i++) {
-          var li = document.createElement('li')
-          li.innerHTML = json [i].data;
-          li.class="nav-item"
-          mainul.appendChild(li)
-      }})
+
 
 !(function($) {
   "use strict";
