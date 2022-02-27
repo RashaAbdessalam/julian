@@ -12,7 +12,7 @@ fetch('https://julianyasin.herokuapp.com/data')
       for (let i = 0; i < json.length; i++) {
           var li = document.createElement('li')
           li.innerHTML = json [i];
-          li.className="list-group-item"
+          li.class="list-group-item"
           mainul.appendChild(li)
       }
  
