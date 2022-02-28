@@ -8,15 +8,15 @@
 fetch('https://julianyasin.herokuapp.com/')
   .then(response => response.json())
   .then(json => {
-      var mainul = document.getElementById('mainul')
-      for (let i = 0; i < json.length; i++) {
-          var li = document.createElement('li')
-          li.innerHTML = json [i].no;
-          li.class="list-group-item"
-          mainul.appendChild(li)
+      // var mainul = document.getElementById('mainul')
+      // for (let i = 0; i < json.length; i++) {
+      //     var li = document.createElement('li')
+      //     li.innerHTML = json [i].no;
+      //     li.class="list-group-item"
+      //     mainul.appendChild(li)
       }
  
-  })
+  )
 
 
 !(function($) {
