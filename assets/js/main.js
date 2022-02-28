@@ -193,40 +193,28 @@
     items: 1
   });
 
-  var ctxL = document.getElementById("myChart").getContext('2d');
-var myLineChart = new Chart(ctxL, {
-type: 'line',
-data: {
-labels: ["January", "February", "March", "April", "May", "June", "July"],
-datasets: [{
-label: "My First dataset",
-data: [65, 59, 80, 81, 56, 55, 40],
-backgroundColor: [
-'rgba(105, 0, 132, .2)',
-],
-borderColor: [
-'rgba(200, 99, 132, .7)',
-],
-borderWidth: 2
-},
-{
-label: "My Second dataset",
-data: [28, 48, 40, 19, 86, 27, 90],
-backgroundColor: [
-'rgba(0, 137, 132, .2)',
-],
-borderColor: [
-'rgba(0, 10, 130, .7)',
-],
-borderWidth: 2
-}
-]
-},
-options: {
-responsive: true
-}
-});
-
+  var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+  var yValues = [7,8,8,9,9,9,10,11,14,14,15];
+  
+  new Chart("myChart", {
+    type: "line",
+    data: {
+      labels: xValues,
+      datasets: [{
+        fill: false,
+        lineTension: 0,
+        backgroundColor: "rgba(0,0,255,1.0)",
+        borderColor: "rgba(0,0,255,0.1)",
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      scales: {
+        yAxes: [{ticks: {min: 6, max:16}}],
+      }
+    }
+  });
 })(jQuery);
 
 
