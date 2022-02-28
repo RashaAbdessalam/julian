@@ -5,9 +5,9 @@
 * License: https://bootstrapmade.com/license/
 */
 
-fetch('https://julianyasin.herokuapp.com/')
-  .then(response => response.json())
-  .then(json => {
+// fetch('https://julianyasin.herokuapp.com/')
+//   .then(response => response.json())
+//   .then(json => {
     //line
 var ctxL = document.getElementById("lineChart").getContext('2d');
 var myLineChart = new Chart(ctxL, {
@@ -49,10 +49,7 @@ responsive: true
       //     li.innerHTML = json [i].no;
       //     li.class="list-group-item"
       //     mainul.appendChild(li)
-      }
- 
-  )
-
+    
 
 !(function($) {
   "use strict";
