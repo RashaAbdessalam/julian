@@ -193,11 +193,6 @@
     items: 1
   });
 
-  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-  <script>
-    
-  </script>
-
 })(jQuery);
 
 
