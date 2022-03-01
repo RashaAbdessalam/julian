@@ -208,7 +208,7 @@
                   borderColor: "green",
                   fill: false
                 }, { 
-                  data: [300,300,300,300,300,300,300,300,300],
+                  data: [300,700,2000,5000,6000,4000,2000,1000,200],
                   borderColor: "blue",
                   fill: false
                 }]
