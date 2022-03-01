@@ -194,7 +194,7 @@
   });
 
   var xValues = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-var yValues = [7,8,8,9,9,9,10,11,14,14,15,18,20,22];
+var yValues = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 
 new Chart("myChart", {
   type: "line",
@@ -211,7 +211,7 @@ new Chart("myChart", {
   options: {
     legend: {display: false},
     scales: {
-      yAxes: [{ticks: {min: 1, max:22}}],
+      yAxes: [{ticks: {min: 1, max:20}}],
     }
   }
 });
