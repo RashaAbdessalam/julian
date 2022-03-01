@@ -211,7 +211,7 @@ new Chart("myChart", {
   options: {
     legend: {display: false},
     scales: {
-      yAxes: [{ticks: {min: 1, max:20}}],
+      yAxes: [{ticks: {min: 3, max:15}}],
     }
   }
 });
