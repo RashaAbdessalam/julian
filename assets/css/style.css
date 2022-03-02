@@ -433,9 +433,19 @@ section {
   margin-bottom: 0;
 }
 
+
+/* chart */
+.chart {
+width:700px;
+height:600px
+}
+
+/* chart */
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content h2 {
   font-weight: 700;
   font-size: 48px;
