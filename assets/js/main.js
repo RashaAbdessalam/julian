@@ -193,7 +193,40 @@
     items: 1
   });
 
-  
+  var ctx = document.getElementById("myChart").getContext("2d");
+        var myChart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: [0,3,6,9,12,15,18,21,24,27,30,33,36
+            ],
+            datasets: [
+              {
+                label: "Max",
+                data: [3.6, 5, 5.5, 6.5, 7, 8, 9],
+                backgroundColor: "#0d6efd",
+                fill: false
+              },
+              {
+                label: "Min",
+                data: [2.5, 3, 3.5, 4, 4.5, 5, 5.5],
+                backgroundColor: "#0d6efd",
+                fill: false
+              },
+              {
+                label: "current",
+                data: [3, 4.4, 5.1, 5.4, 6.3, 7, 7.6],
+                backgroundColor: "#dc3545",
+                fill: false
+              },
+            ],
+          },
+          options: {
+        legend: {display: false},
+        scales: {
+          yAxes: [{ticks: {min: 0, max:20}}],
+        }
+      }
+        });
 
 })(jQuery);
 
