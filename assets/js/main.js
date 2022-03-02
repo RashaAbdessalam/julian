@@ -197,7 +197,7 @@
         var myChart = new Chart(ctx, {
           type: "line",
           data: {
-            labels: [0,3,6,9,12,15,18,21,24,27,30,33,36
+            labels: [0,3,6,9,12,15,18,21
             ],
             datasets: [
               {
