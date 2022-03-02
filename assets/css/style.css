@@ -435,10 +435,10 @@ section {
 
 
 /* chart */
-/* .chart {
-width:700px;
-height:600px
-} */
+.customContainer {
+  width: 70%;
+  margin: 15px auto;
+}
 
 /* chart */
 
