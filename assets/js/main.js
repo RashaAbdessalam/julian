@@ -193,40 +193,84 @@
     items: 1
   });
 
-  var ctx = document.getElementById("myChart").getContext("2d");
-        var myChart = new Chart(ctx, {
-          type: "line",
-          data: {
-            labels: [0,3,6,9,12,15,18,21,24,27,30,33,36
-            ],
-            datasets: [
-              {
-                label: "Max",
-                data: [3.6, 5, 5.5, 6.5, 7, 8, 9],
-                backgroundColor: "#0d6efd",
-                fill: false
-              },
-              {
-                label: "Min",
-                data: [2.5, 3, 3.5, 4, 4.5, 5, 5.5],
-                backgroundColor: "#0d6efd",
-                fill: false
-              },
-              {
-                label: "current",
-                data: [3, 4.4, 5.1, 5.4, 6.3, 7, 7.6],
-                backgroundColor: "#dc3545",
-                fill: false
-              },
-            ],
-          },
-          options: {
-        legend: {display: false},
-        scales: {
-          yAxes: [{ticks: {min: 0, max:20}}],
+  /* chart.js chart examples */
+
+// chart colors
+var colors = ['#007bff','#28a745','#333333','#c3e6cb','#dc3545','#6c757d'];
+
+/* large line chart */
+var chLine = document.getElementById("chLine");
+var chartData = {
+  labels: ["S", "M", "T", "W", "T", "F", "S"],
+  datasets: [{
+    data: [589, 445, 483, 503, 689, 692, 634],
+    backgroundColor: 'transparent',
+    borderColor: colors[0],
+    borderWidth: 4,
+    pointBackgroundColor: colors[0]
+  },
+  {
+    data: [639, 465, 493, 478, 589, 632, 674],
+    backgroundColor: colors[3],
+    borderColor: colors[1],
+    borderWidth: 4,
+    pointBackgroundColor: colors[1]
+  }]
+};
+
+if (chLine) {
+  new Chart(chLine, {
+  type: 'line',
+  data: chartData,
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: false
         }
-      }
-        });
+      }]
+    },
+    legend: {
+      display: false
+    }
+  }
+  });
+}
+
+  // var ctx = document.getElementById("myChart").getContext("2d");
+  //       var myChart = new Chart(ctx, {
+  //         type: "line",
+  //         data: {
+  //           labels: [0,3,6,9,12,15,18,21,24,27,30,33,36
+  //           ],
+  //           datasets: [
+  //             {
+  //               label: "Max",
+  //               data: [3.6, 5, 5.5, 6.5, 7, 8, 9],
+  //               backgroundColor: "#0d6efd",
+  //               fill: false
+  //             },
+  //             {
+  //               label: "Min",
+  //               data: [2.5, 3, 3.5, 4, 4.5, 5, 5.5],
+  //               backgroundColor: "#0d6efd",
+  //               fill: false
+  //             },
+  //             {
+  //               label: "current",
+  //               data: [3, 4.4, 5.1, 5.4, 6.3, 7, 7.6],
+  //               backgroundColor: "#dc3545",
+  //               fill: false
+  //             },
+  //           ],
+  //         },
+  //         options: {
+  //       legend: {display: false},
+  //       scales: {
+  //         yAxes: [{ticks: {min: 0, max:20}}],
+  //       }
+  //     }
+  //       });
 
 })(jQuery);
 
