@@ -200,7 +200,7 @@ var colors = ['#007bff','#28a745','#333333','#c3e6cb','#dc3545','#6c757d'];
 
 /* large line chart */
 var chLine = document.getElementById("chLine");
-var chartData = {
+var chartData = `{
   labels: ["S", "M", "T", "W", "T", "F", "S"],
   datasets: [{
     data: [589, 445, 483, 503, 689, 692, 634],
@@ -216,7 +216,7 @@ var chartData = {
     borderWidth: 4,
     pointBackgroundColor: colors[1]
   }]
-};
+}`;
 
 if (chLine) {
   new Chart(chLine, {
